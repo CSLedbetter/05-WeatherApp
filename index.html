@@ -1,18 +1,72 @@
-<html>
+<html lang="en" ng-app="app">
 
 <head>
     <title>Weather App</title>
-
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="jumbotron">
-        <h1>Weather App</h1>
+<body ng-controller="WeatherController as WCtrl">
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Weather App</h1>
+            <h3>Always know if you'll need an umbrella!</h3>
+        </div>
+        <!--extra the "favorites" above input field-->
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <!--input search bar-->
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Type in a city to check the weather!" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="cityName">Go!</span>
+        </div>
+        <!--panels to display weather info-->
+     
+        <div class="panel panel-info col-md-6">
+            <div class="panel-heading">
+                <h3 class="panel-title">City Information</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-info col-md-6">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search History</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
+    <script src="bower_components/angular/angular.js>"></script>
     <script src="bower_components/dist/jquery.js"></script>
     <script src="bower_components/dist/js/bootstrap.js"></script>
-</body>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.controller.js">
+        < script >
+            <
+            /body>
 
-</html>
+
+            <
+            /html>
